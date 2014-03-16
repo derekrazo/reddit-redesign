@@ -44,10 +44,13 @@ body {
 
 .filter-button:hover {
    background-color: #5c94f4;
+   color: white;
+
 }
 
-.active{
+.active-button{
   background-color: #5c94f4;
+  color: white;
 }
 
 .sidebar-component-container {
@@ -58,6 +61,10 @@ body {
   height: 300px;
   margin-bottom: 10px;
   background-color: #ffffff;
+}
+
+.sidebar-search-bar-container {
+  height: 60px;
 }
 
 .sidebar-search-icon {
@@ -81,11 +88,8 @@ body {
   border-radius: 6px;
   border: 1px solid #e9e9e9;
 
-
-
-
-
-
+  outline-color: #ffffff;
+  outline-width: 1px;
 }
 
 .sidebar-search-bar:focus {
@@ -94,6 +98,79 @@ body {
 
   outline-color: #ffffff;
   outline-width: 1px;
+
+
+}
+
+.opacity-up {
+    opacity:0.9;
+}
+
+.active-search-bar {
+    box-shadow: 0px 0px 0px 1pt;
+
+    outline-color: #ffffff;
+    outline-width: 1px;
+}
+
+.sidebar-item-container {
+   background-color: white;
+   color: black;
+   position: relative;
+   left: 10px;
+   height: 30px;
+   width: 90%;
+   margin-top: 5px;
+   margin-right: 0px;
+  text-align: center;
+  line-height: 190%;
+  float: left;
+
+  transition: transition 2s;
+
+}
+
+.sidebar-item-container > p {
+   margin-left: 10px;
+   transition: 1s;
+}
+
+.sidebar-item-container:hover > .sidebar-item-tab {
+  background-color: #5c94f4;
+
+}
+
+.sidebar-item-container:hover > p {
+  margin-left: 20px;
+  transition: margin-left 1s;
 }
 
 
+
+.sidebar-item {
+
+}
+
+.active-tab{
+  background-color: #5c94f4;
+}
+
+.sidebar-item-tab{
+  background-color: #f1f1f1;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 30px;
+  height: 100%;
+  float: left;
+}
+
+
+
+.sidebar-item-name{
+  margin-left: 5px;
+  float: left;
+  margin: 0;
+  margin-left: 5px;
+}
