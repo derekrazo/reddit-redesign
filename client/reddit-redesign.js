@@ -1,9 +1,12 @@
 $(document).ready(function(){
+
+
     $('#hot, #new, #top').click(function(event) {
       $('#hot').removeClass("active-button");
       $('#top').removeClass("active-button");
       $('#new').removeClass("active-button");
       $(this).toggleClass("active-button");
+
     });
 
     $('.sidebar-search-bar').hover(function() {
@@ -16,9 +19,11 @@ $(document).ready(function(){
       $('.sidebar-search-bar').removeClass('active-search-bar');
     });
 
-
-
-
+    $('.sidebar-item-container').click(function() {
+      console.log(this);
+      $('.sidebar-item-tab').removeClass('active-tab');
+      $(this).children('.sidebar-item-tab').addClass('active-tab');
+    });
 
 
 });

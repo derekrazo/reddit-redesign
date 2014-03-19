@@ -11,6 +11,8 @@
 
     {{> sidebar}}
 
+    {{> post-list}}
+
 </body>
 
 <template name="banner">
@@ -49,13 +51,13 @@
 
         </div>
 
-        <div class="sidebar-item-container">
+        <div class="sidebar-item-container" id="cs">
 
                 <div class="sidebar-item-tab">
 
                 </div>
 
-                <p class="sidebar-item-name">/r/computer science</p>
+                <p class="sidebar-item-name" >/r/computer science</p>
 
         </div>
 
@@ -112,8 +114,64 @@
 
 </template>
 
-<template name="content-list">
+<template name="post-list">
 
+    <div class="post-list-container">
+        {{> post}}
+    </div>
+
+</template>
+
+
+<template name="post">
+
+    <div class="post-container">
+        <div class="post-voter">
+
+            <img src="" id="upvote"></img>
+
+            <img src="" id="dot"></img>
+
+            <img src="" id="downvote"></img>
+
+        </div>
+
+        <div class="post-thumbnail">
+
+            <img src="thumb.png" id="thumbnail"></img>
+
+        </div>
+
+        <div class="post-title">
+
+            <p>This is a picture of a cute cat</p>
+
+        </div>
+
+        <div class="post-source">
+
+            <p>cutecat.com</p>
+
+        </div>
+
+        <div class="post-submit-info">
+
+            <p>Submitted 9 hours ago by</p> <a href="">thisguy</a>
+
+        </div>
+
+
+        <ul class="post-click-through">
+            <li><a href="" id="comments">2 comments </a></li>
+            <li><a href="" id="share">share</a></li>
+            <li><a href="" id="save">save</a></li>
+            <li><a href="" id="hide">hide</a></li>
+            <li><a href="" id="report">report</a></li>
+        </ul>
+
+
+
+    </div>
 </template>
 
 <template name="guide-box">

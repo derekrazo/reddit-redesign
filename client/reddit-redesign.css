@@ -151,10 +151,6 @@ body {
 
 }
 
-.active-tab{
-  background-color: #5c94f4;
-}
-
 .sidebar-item-tab{
   background-color: #f1f1f1;
   position: relative;
@@ -166,6 +162,9 @@ body {
   float: left;
 }
 
+.active-tab{
+  background-color: #5c94f4;
+}
 
 
 .sidebar-item-name{
@@ -174,3 +173,139 @@ body {
   margin: 0;
   margin-left: 5px;
 }
+
+.post-list-container {
+  position: absolute;
+  top: 0;
+  left: 230px;
+  width: 100%;
+  height: 100%
+  background-color: black;
+}
+
+.post-container {
+  position: relative;
+  float: left;
+  top: 100px;
+  width: 100%;
+  height: 65px;
+  display:block;
+  background-color: white;
+}
+
+.post-voter{
+  float: left;
+
+}
+
+.post-thumbnail{
+  float: left;
+
+}
+
+.post-title{
+  float: left;
+  text-align: center;
+  position: relative;
+  top: 9px;
+  margin-bottom: 10px;
+
+}
+
+.post-title > p {
+  margin: 0;
+  position: relative;
+  font-size: 19px;
+  color: #5b92fa;
+}
+
+.post-source{
+  float: left;
+  margin-left:10px;
+  height: 12px;
+  position: relative;
+  margin-top: 15px;
+
+}
+
+.post-source > p{
+  color: grey;
+  font-size: 12px;
+  position: relative;
+  margin: 0px;
+
+}
+
+.post-submit-info{
+height: 13px;
+width: 50%;
+margin-right: 0px;
+position: absolute;
+top: 31px;
+left: 77px;
+
+}
+
+.post-submit-info > p{
+ float: left;
+ position:relative;
+ top: 0px;
+ height: 13px;
+ width: 100%;
+ margin: 0px;
+ font-size: 12px;
+ color: grey;
+
+
+}
+
+.post-submit-info > a{
+  float: left;
+  left: 150px;
+  top: 0px;
+  position: absolute;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: thin;
+  color: #5b92fa;
+
+}
+
+.post-click-through {
+  list-style: none;
+  position: relative;
+  top: 41px;
+  left: 76px;
+  width: 30%;
+  height: 12px;
+  margin: 0px 0px;
+  padding-left: 0px;
+}
+
+
+.post-click-through > li{
+  list-style: none;
+  float: left;
+  position: relative;
+  left: -86px;
+  top: -27px;
+  height: 13px;
+  font-size: 13px;
+  margin-left: 1px;
+}
+
+.post-click-through > li > a{
+  list-style: none;
+  float: left;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  height: 13px;
+  font-size: 13px;
+  margin-left: 10px;
+  text-decoration: inherit;
+  font-weight: bold;
+  color: #5c94f4;
+}
+
+
