@@ -19,7 +19,9 @@ body {
   background-color: #ffffff;
   padding: 8px;
   margin-right:8px;
-
+  box-shadow: 2px 2px 5px #888888;
+  position: fixed;
+  z-index: 2;
 }
 
 #wink {
@@ -53,21 +55,95 @@ body {
   color: white;
 }
 
-.sidebar-component-container {
+.login-container {
   position: relative;
-  top: 20px;
+  float: right;
+  width: 220px;
+  height: 100%;
+}
+
+.login-name {
+  width: 100px;
+  left: 45px;
+  position: relative;
+
+}
+
+.login-name > p{
+  margin-right: 10x;
+
+}
+
+.unread-messages {
+  position: absolute;
+  top: -7px;
+  right: 35px;
+  width: 30px;
+  margin-right: 12px;
+  z-index: 1;
+  color: black;
+}
+
+.unread-messages > p {
+  float: left;
+
+}
+
+.unread-messages > a {
+  float: left;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#message-icon {
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  height: 30px;
+  width: 30px;
+  margin-top: 3%;
+  margin-right: px;
+}
+
+
+#sign-out-icon {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  height: 30px;
+  width: 30px;
+  margin-top: 3%;
+  margin-right: 27px;
+}
+
+#user-image {
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 45px;
+  width: 45px;
+
+
+}
+
+
+
+.left-sidebar-component-container {
+  position: relative;
+  top: 75px;
   left: 10px;
   width: 200px;
-  height: 300px;
+  height: 100%;
   margin-bottom: 10px;
   background-color: #ffffff;
 }
 
-.sidebar-search-bar-container {
+.left-sidebar-search-bar-container {
   height: 60px;
 }
 
-.sidebar-search-icon {
+.left-sidebar-search-icon {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -76,7 +152,7 @@ body {
   opacity:0.4;
 }
 
-.sidebar-search-bar {
+.left-sidebar-search-bar {
 
   position: relative;
   top: 15px;
@@ -92,7 +168,7 @@ body {
   outline-width: 1px;
 }
 
-.sidebar-search-bar:focus {
+.left-sidebar-search-bar:focus {
 
   box-shadow: 0px 0px 0px 1pt;
 
@@ -113,7 +189,7 @@ body {
     outline-width: 1px;
 }
 
-.sidebar-item-container {
+.left-sidebar-item-container {
    background-color: white;
    color: black;
    position: relative;
@@ -130,28 +206,28 @@ body {
 
 }
 
-.sidebar-item-container > p {
+.left-sidebar-item-container > p {
    margin-left: 10px;
    transition: 1s;
 }
 
-.sidebar-item-container:hover > .sidebar-item-tab {
+.left-sidebar-item-container:hover > .left-sidebar-item-tab {
   background-color: #5c94f4;
 
 }
 
-.sidebar-item-container:hover > p {
+.left-sidebar-item-container:hover > p {
   margin-left: 20px;
   transition: margin-left 1s;
 }
 
 
 
-.sidebar-item {
+.left-sidebar-item {
 
 }
 
-.sidebar-item-tab{
+.left-sidebar-item-tab{
   background-color: #f1f1f1;
   position: relative;
   left: 0;
@@ -167,7 +243,7 @@ body {
 }
 
 
-.sidebar-item-name{
+.left-sidebar-item-name{
   margin-left: 5px;
   float: left;
   margin: 0;
@@ -176,7 +252,7 @@ body {
 
 .post-list-container {
   position: absolute;
-  top: 0;
+  top: 80px;
   left: 230px;
   width: 100%;
   height: 100%
@@ -186,11 +262,14 @@ body {
 .post-container {
   position: relative;
   float: left;
-  top: 100px;
-  width: 100%;
+  top: 0px;
+  width: 60%;
   height: 65px;
   display:block;
   background-color: white;
+  margin-bottom: 20px;
+  padding-bottom: 7px;
+  box-shadow: 3px 3px 5px #888888;
 }
 
 .post-voter{
@@ -241,15 +320,16 @@ height: 13px;
 width: 50%;
 margin-right: 0px;
 position: absolute;
-top: 31px;
-left: 77px;
+top: 33px;
+left: 70px;
 
 }
 
 .post-submit-info > p{
  float: left;
  position:relative;
- top: 0px;
+ top: -3px;
+ left: 8px;
  height: 13px;
  width: 100%;
  margin: 0px;
@@ -261,8 +341,8 @@ left: 77px;
 
 .post-submit-info > a{
   float: left;
-  left: 150px;
-  top: 0px;
+  left: 155px;
+  top: -2px;
   position: absolute;
   text-decoration: none;
   font-size: 12px;
@@ -274,9 +354,9 @@ left: 77px;
 .post-click-through {
   list-style: none;
   position: relative;
-  top: 41px;
-  left: 76px;
-  width: 30%;
+  top: 43px;
+  left: 77px;
+  width: 50%;
   height: 12px;
   margin: 0px 0px;
   padding-left: 0px;
@@ -309,3 +389,155 @@ left: 77px;
 }
 
 
+
+
+
+
+
+
+
+
+
+.right-sidebar-component-container {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  width: 270px;
+  height: 300px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.right-sidebar-search-bar-container {
+  height: 60px;
+}
+
+.right-sidebar-search-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  opacity:0.4;
+}
+
+.right-sidebar-search-bar {
+
+  position: relative;
+  top: 15px;
+  left: 10px;
+
+  width: 90%;
+  height: 32px;
+
+  border-radius: 6px;
+  border: 1px solid #e9e9e9;
+
+  outline-color: #ffffff;
+  outline-width: 1px;
+}
+
+.right-sidebar-search-bar:focus {
+
+  box-shadow: 0px 0px 0px 1pt;
+
+  outline-color: #ffffff;
+  outline-width: 1px;
+
+
+}
+
+.opacity-up {
+    opacity:0.9;
+}
+
+.active-search-bar {
+    box-shadow: 0px 0px 0px 1pt;
+
+    outline-color: #ffffff;
+    outline-width: 1px;
+}
+
+.left-sidebar-container{
+  position: fixed;
+
+}
+
+.left-sidebar-item-container {
+   background-color: white;
+   color: black;
+   position: relative;
+   left: 10px;
+   height: 30px;
+   width: 90%;
+   margin-top: 5px;
+   margin-right: 0px;
+  text-align: center;
+  line-height: 190%;
+  float: left;
+  box-shadow: 1px 1px 5px #888888;
+
+
+  transition: transition 2s;
+
+}
+
+.left-sidebar-item-container > p {
+   margin-left: 10px;
+   transition: 1s;
+}
+
+.left-sidebar-item-container:hover > .left-sidebar-item-tab {
+  background-color: #5c94f4;
+
+}
+
+.left-sidebar-item-container:hover > p {
+  margin-left: 20px;
+  transition: margin-left 1s;
+}
+
+
+
+.left-sidebar-item {
+
+
+}
+
+.left-sidebar-item-tab{
+  background-color: #f1f1f1;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 30px;
+  height: 100%;
+  float: left;
+}
+
+.active-tab{
+  background-color: #5c94f4;
+}
+
+
+.left-sidebar-item-name{
+  margin-left: 5px;
+  float: left;
+  margin: 0;
+  margin-left: 5px;
+}
+
+.active-tab-orange{
+  background-color:#e79f17;
+}
+
+
+.top.left-sidebar-item-container:hover > .left-sidebar-item-tab {
+  background-color: #e79f17;
+
+}
+
+#cs {
+ margin-top: 60px;
+}

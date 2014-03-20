@@ -9,9 +9,11 @@
 
     {{> banner}}
 
-    {{> sidebar}}
+    {{> left-sidebar}}
 
     {{> post-list}}
+
+    {{> right-sidebar}}
 
 </body>
 
@@ -31,6 +33,30 @@
 
         </div>
 
+        <div class="login-container">
+
+            <div class="login-name">
+
+                <p>Derek Razo</p>
+
+            </div>
+
+            <div class="unread-messages">
+
+                <p>(</p>
+                    <a>1</a>
+                <p>)</p>
+
+            </div>
+
+            <img id="message-icon" src="mail.png"></img>
+
+            <!--<img id="sign-out-icon" src="settings.png"></img>-->
+
+            <img id="user-image" src="avatar.jpg"></img>
+
+        </div>
+
     </div>
 
 </template>
@@ -39,84 +65,172 @@
 
 </template>
 
-<template name="sidebar">
+<template name="left-sidebar">
 
-    <div class="sidebar-component-container">
 
-        <div class="sidebar-search-bar-container">
 
-            <input class= "sidebar-search-bar"type="text">
+    <div class="left-sidebar-component-container">
+        <!--
 
-            <img class="sidebar-search-icon" src="search.png"></img>
+         <div class="left-sidebar-search-bar-container">
 
-        </div>
+            <input class= "left-sidebar-search-bar"type="text">
 
-        <div class="sidebar-item-container" id="cs">
-
-                <div class="sidebar-item-tab">
-
-                </div>
-
-                <p class="sidebar-item-name" >/r/computer science</p>
+            <img class="left-sidebar-search-icon" src="search.png"></img>
 
         </div>
 
-        <div class="sidebar-item-container">
+        -->
 
-                <div class="sidebar-item-tab">
+        <div class="left-sidebar-heading-container">
 
-                </div>
 
-                <p class="sidebar-item-name">/r/programming</p>
 
         </div>
 
-        <div class="sidebar-item-container">
+        <div class="top left-sidebar-item-container" id="">
 
-                <div class="sidebar-item-tab">
+                <div class="top left-sidebar-item-tab">
 
                 </div>
 
-                <p class="sidebar-item-name" >/r/hacking</p>
+                <p class="top left-sidebar-item-name" >Subscribed</p>
 
         </div>
 
-        <div class="sidebar-item-container">
+        <div class="top left-sidebar-item-container" id="">
 
-                <div class="sidebar-item-tab">
+                <div class="top left-sidebar-item-tab">
 
                 </div>
 
-                <p class="sidebar-item-name">/r/bitcoin</p>
+                <p class="top left-sidebar-item-name" >Favorites</p>
 
         </div>
 
-        <div class="inactive sidebar-item-container">
+        <div class="top left-sidebar-item-container" id="">
 
-                <div class="inactive sidebar-item-tab">
+                <div class="top left-sidebar-item-tab">
 
                 </div>
 
-                <p class="sidebar-item-name">/r/maxmsp</p>
+                <p class="top left-sidebar-item-name" >Explore</p>
+
+        </div>
+
+        <div class="top left-sidebar-item-container" id="">
+
+                <div class="top left-sidebar-item-tab">
+
+                </div>
+
+                <p class="top left-sidebar-item-name" >Everything</p>
+
+        </div>
+
+        <div class="top left-sidebar-item-container" id="">
+
+                <div class="top left-sidebar-item-tab">
+
+                </div>
+
+                <p class="top left-sidebar-item-name" >Saved</p>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="left-sidebar-component-container">
+
+
+        <div class="left-sidebar-item-container" id="cs">
+
+                <div class="left-sidebar-item-tab">
+
+                </div>
+
+                <p class="left-sidebar-item-name" >/r/computer science</p>
+
+        </div>
+
+        <div class="left-sidebar-item-container">
+
+                <div class="left-sidebar-item-tab">
+
+                </div>
+
+                <p class="left-sidebar-item-name">/r/programming</p>
+
+        </div>
+
+        <div class="left-sidebar-item-container">
+
+                <div class="left-sidebar-item-tab">
+
+                </div>
+
+                <p class="left-sidebar-item-name" >/r/hacking</p>
+
+        </div>
+
+        <div class="left-sidebar-item-container">
+
+                <div class="left-sidebar-item-tab">
+
+                </div>
+
+                <p class="left-sidebar-item-name">/r/bitcoin</p>
+
+        </div>
+
+        <div class="left-sidebar-item-container">
+
+                <div class="inactive left-sidebar-item-tab">
+
+                </div>
+
+                <p class="left-sidebar-item-name">/r/maxmsp</p>
 
         </div>
 
 
     </div>
 
-    <div class="sidebar-component-container">
+    <div class="left-sidebar-component-container">
 
     </div>
 
-    <div class="sidebar-component-container">
 
-    </div>
 
 </template>
 
 <template name="post-list">
 
     <div class="post-list-container">
+        {{> post}}
+
+        {{> post}}
+
+        {{> post}}
+
+        {{> post}}
+
+        {{> post}}
+
+        {{> post}}
+
+        {{> post}}
+
+        {{> post}}
+
+        {{> post}}
+
+        {{> post}}
+
+        {{> post}}
+
         {{> post}}
     </div>
 
@@ -174,6 +288,18 @@
     </div>
 </template>
 
-<template name="guide-box">
+<template name="right-sidebar">
+
+     <div class="right-sidebar-component-container">
+
+         <div class="right-sidebar-search-bar-container">
+
+            <input class="right-sidebar-search-bar" type="text">
+
+            <img class="right-sidebar-search-icon" src="search.png"></img>
+
+        </div>
+
+    </div>
 
 </template>
