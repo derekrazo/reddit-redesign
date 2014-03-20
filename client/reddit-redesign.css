@@ -403,7 +403,7 @@ left: 70px;
   top: 80px;
   right: 20px;
   width: 270px;
-  height: 300px;
+  height: 160px;
   margin-bottom: 10px;
   background-color: #ffffff;
   box-shadow: 1px 1px 5px #888888;
@@ -539,5 +539,95 @@ left: 70px;
 }
 
 #cs {
- margin-top: 60px;
+ margin-top: 100px;
 }
+
+.left-sidebar-buttons {
+  width: 100%;
+height: 70px;
+position: absolute;
+top: 180px;
+background-color: white;
+    box-shadow: 1px 1px 5px #888888;
+
+}
+
+.favorites {
+  height: 50px;
+  width: 50px;
+  float: left;
+  position: relative;
+  top: 10px;
+  left: 25px;
+  opacity: 0.8;
+
+}
+
+.multi {
+  height: 50px;
+  width: 50px;
+  float: left;
+  position: relative;
+  top: -60px;
+  left: 125px;
+  opacity: 0.4;
+
+}
+
+hr.vertically {
+  width: 0;
+
+  margin: 0px 0px;
+  position: relative;
+  left: 50px;
+  height: 68px;
+  top: 0px;
+
+}
+
+.right-sidebar-content-button {
+  width: 91%;
+  height: 35px;
+  background-color: #5b92fa;
+  position: relative;
+  left: 12px;
+  box-shadow: 1px 1px 5px #888888;
+
+
+}
+
+.right-sidebar-content-button > a{
+  position: relative;
+  left: 22%;
+  top: 9px;
+  color: white;
+  font-weight: bold;
+}
+
+.right-sidebar-sub-button {
+  width: 91%;
+  height: 35px;
+  background-color: #f39c12;
+  position: relative;
+  left: 12px;
+  box-shadow: 1px 1px 5px #888888;
+  margin-top: 10px;
+  font-weight: bold;
+
+
+}
+
+.right-sidebar-sub-button > a{
+  position: relative;
+  left: 16%;
+  top: 9px;
+  color: white;
+
+
+}
+
+.bottom {
+
+  margin-top: 180px;
+}
+
